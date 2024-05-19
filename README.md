@@ -36,7 +36,7 @@ Double-Double Precision: [DoubleDoubleStatistic](https://github.com/tk-yoshimura
 ## Licence
 [CC BY 4.0](https://github.com/tk-yoshimura/LandauDistributionFP64/blob/main/LICENSE)
 
-If anyone uses any part of the code in this repository, please let me know by contacting Issue.  
+If anyone would like to use some of the code in this repository, please contact me with an Issue and let me know.  
 [Issue](https://github.com/tk-yoshimura/LandauDistributionFP64/issues)
 
 ## Author
