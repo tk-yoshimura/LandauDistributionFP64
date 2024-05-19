@@ -27,7 +27,7 @@ options = [
     [],
     [],
     ['logx'],
-    ['logx'],
+    ['logx', 'logy'],
 ]
 
 for target, option in zip(targets, options):

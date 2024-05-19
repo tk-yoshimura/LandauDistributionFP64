@@ -154,13 +154,15 @@ namespace LandauDistributionFP64Tests {
             LandauDistributionFP64.LandauDistribution dist_fp64 = new();
             DoubleDoubleStatistic.ContinuousDistributions.LandauDistribution dist_fp128 = new();
 
-            for (double x = 1d / 8192; x > double.ScaleB(1, -1000); x /= 2) {
-                double actual = dist_fp64.Quantile(x, LandauDistributionFP64.Interval.Upper);
-                ddouble expected = dist_fp128.Quantile(x, DoubleDoubleStatistic.Interval.Upper);
-                ddouble error = ddouble.Abs(expected - actual);
-                ddouble rateerror = (error != 0) ? error / ddouble.Abs(expected) : 0;
+            for (double x0 = 1d / 8192; x0 > double.ScaleB(1, -128); x0 /= 2) {
+                for (double x = x0; x > x0 / 2; x -= x0 / 256) {
+                    double actual = dist_fp64.Quantile(x, LandauDistributionFP64.Interval.Upper);
+                    ddouble expected = dist_fp128.Quantile(x, DoubleDoubleStatistic.Interval.Upper);
+                    ddouble error = ddouble.Abs(expected - actual);
+                    ddouble rateerror = (error != 0) ? error / ddouble.Abs(expected) : 0;
 
-                sw.WriteLine($"{x},{expected:e20},{actual},{error:e8},{rateerror:e8}");
+                    sw.WriteLine($"{x},{expected:e20},{actual},{error:e8},{rateerror:e8}");
+                }
             }
         }
     }
