@@ -1,4 +1,4 @@
-﻿// Copyright (c) T.Yoshimura 2024
+﻿// Author: Takuma Yoshimura
 // https://github.com/tk-yoshimura
 
 using LandauDistributionFP64.InternalUtils;
@@ -81,8 +81,8 @@ namespace LandauDistributionFP64 {
             double z = random.NextUniformOpenInterval01(), u = z - 0.5d;
             double w = random.NextUniformOpenInterval01();
 
-            double r = 2d / Pi * (z * TanPi(u) * Pi - Log(Log(w) * CosPi(u) / (-2d * z * (double)C)));
-            double v = r * (double)C + (double)Mu;
+            double r = 2d / Pi * (z * TanPi(u) * Pi - Log(Log(w) * CosPi(u) / (-2d * z * C)));
+            double v = r * C + Mu;
 
             return v;
         }
@@ -518,7 +518,7 @@ namespace LandauDistributionFP64 {
                     return y;
                 }
                 else {
-                    int exponent = ILogB((double)x);
+                    int exponent = ILogB(x);
 
                     double v;
                     if (exponent < 8) {
@@ -964,7 +964,7 @@ namespace LandauDistributionFP64 {
                     return y;
                 }
                 else {
-                    int exponent = ILogB((double)x);
+                    int exponent = ILogB(x);
 
                     double v;
                     if (exponent < 8) {
@@ -1501,7 +1501,7 @@ namespace LandauDistributionFP64 {
                 }
                 else {
                     double v;
-                    int exponent = ILogB((double)x);
+                    int exponent = ILogB(x);
 
                     if (exponent >= -4) {
                         v = ApproxUtil.Pade(-Log2(ScaleB(x, 3)), pade_upper_expm3_4);
@@ -1547,7 +1547,7 @@ namespace LandauDistributionFP64 {
                 }
                 else {
                     double y;
-                    int exponent = ILogB((double)x);
+                    int exponent = ILogB(x);
 
                     if (exponent >= -4) {
                         y = ApproxUtil.Pade(-Log2(ScaleB(x, 3)), pade_lower_expm3_4);
