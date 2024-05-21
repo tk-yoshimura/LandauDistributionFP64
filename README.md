@@ -1,5 +1,5 @@
 # LandauDistributionFP64
- LandauDistribution Double Precision Implement
+ Landau Distribution Double Precision Implement
  
 ## Landau Distribution
 See: [LandauDistribution](https://github.com/tk-yoshimura/LandauDistribution)  
