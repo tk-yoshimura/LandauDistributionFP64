@@ -1,4 +1,4 @@
-﻿// Author: T.Yoshimura
+﻿// Author and Approximation Formula Coefficient Generator: T.Yoshimura
 // https://github.com/tk-yoshimura
 
 using LandauDistributionFP64.InternalUtils;
