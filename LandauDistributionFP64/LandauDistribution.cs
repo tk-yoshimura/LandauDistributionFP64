@@ -1,4 +1,4 @@
-﻿// Author: Takuma Yoshimura
+﻿// Author: T.Yoshimura
 // https://github.com/tk-yoshimura
 
 using LandauDistributionFP64.InternalUtils;
