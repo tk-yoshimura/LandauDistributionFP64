@@ -1,5 +1,6 @@
 ﻿// Author and Approximation Formula Coefficient Generator: T.Yoshimura
-// https://github.com/tk-yoshimura
+// Github: https://github.com/tk-yoshimura
+// Original Code: https://github.com/tk-yoshimura/LandauDistributionFP64
 
 using LandauDistributionFP64.InternalUtils;
 using LandauDistributionFP64.RandomGeneration;
