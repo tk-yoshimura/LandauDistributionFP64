@@ -42,3 +42,8 @@ If anyone would like to use some of the code in this repository, please contact 
 ## Author
 
 [T.Yoshimura](https://github.com/tk-yoshimura)
+
+## Related Works
+[LandauDistributionFP64 &alpha;=1, &beta;=1](https://github.com/tk-yoshimura/LandauDistributionFP64)  
+[HoltsmarkDistributionFP64 &alpha;=3/2, &beta;=0](https://github.com/tk-yoshimura/HoltsmarkDistributionFP64)  
+[MapAiryDistributionFP64 &alpha;=3/2, &beta;=1](https://github.com/tk-yoshimura/MapAiryDistributionFP64)  
