@@ -47,3 +47,4 @@ If anyone would like to use some of the code in this repository, please contact 
 [LandauDistributionFP64 &alpha;=1, &beta;=1](https://github.com/tk-yoshimura/LandauDistributionFP64)  
 [HoltsmarkDistributionFP64 &alpha;=3/2, &beta;=0](https://github.com/tk-yoshimura/HoltsmarkDistributionFP64)  
 [MapAiryDistributionFP64 &alpha;=3/2, &beta;=1](https://github.com/tk-yoshimura/MapAiryDistributionFP64)  
+[SaSPoint5DistributionFP64 &alpha;=1/2, &beta;=0](https://github.com/tk-yoshimura/SaSPoint5DistributionFP64)  
