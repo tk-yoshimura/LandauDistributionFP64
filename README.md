@@ -7,6 +7,7 @@ Double-Double Precision: [DoubleDoubleStatistic](https://github.com/tk-yoshimura
 
 ## Double Precision (IEEE 754) Approx
 [C# code](LandauDistributionFP64/LandauDistribution.cs)  
+[C++ code](LandauDistributionFP64_CPP/landau_distribution.hpp)  
 
 ## Error
 
