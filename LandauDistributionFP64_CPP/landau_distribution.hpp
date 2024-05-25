@@ -3,6 +3,8 @@
 // Original Code: https://github.com/tk-yoshimura/LandauDistributionFP64
 // C++20 implement
 
+#pragma once
+
 #include <vector>
 #include <cmath>
 #include <cassert>
