@@ -40,6 +40,9 @@ Double-Double Precision: [DoubleDoubleStatistic](https://github.com/tk-yoshimura
 If anyone would like to use some of the code in this repository, please contact me with an Issue and let me know.  
 [Issue](https://github.com/tk-yoshimura/LandauDistributionFP64/issues)
 
+## Report
+[TechRxiv](https://www.techrxiv.org/users/661998/articles/1085065-numerical-evaluation-and-high-precision-approximation-formula-for-landau-distribution)
+
 ## Author
 
 [T.Yoshimura](https://github.com/tk-yoshimura)
