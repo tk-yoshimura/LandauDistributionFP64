@@ -87,7 +87,7 @@ namespace LandauDistributionFP64 {
 
             return v;
         }
-        
+
         public bool Symmetric => false;
 
         public double Median => Mu + (median_base - bias) * C;
