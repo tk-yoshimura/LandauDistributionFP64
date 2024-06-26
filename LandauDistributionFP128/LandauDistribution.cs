@@ -3,6 +3,7 @@
 // Original Code: https://github.com/tk-yoshimura/LandauDistributionFP64
 
 using LandauDistributionFP128.InternalUtils;
+using LandauDistributionFP128.RandomGeneration;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Float128 = MultiPrecision.MultiPrecision<MultiPrecision.Pow2.N4>;
@@ -16,6 +17,10 @@ namespace LandauDistributionFP128 {
         public Float128 C { get; }
 
         private readonly Float128 c_inv, bias;
+
+        private static readonly Float128 mode_base = "-0.42931452986133525016556463510885028346";
+        private static readonly Float128 median_base = "0.57563014394507821439627930892257517269";
+        private static readonly Float128 entropy_base = "2.3726364400044818244844049010588577710";
 
         public LandauDistribution() : this(mu: 0d, c: 1d) { }
 
@@ -72,6 +77,32 @@ namespace LandauDistributionFP128 {
 
             return x;
         }
+
+        public double Sample(Random random) {
+            double z = random.NextUniformOpenInterval01(), u = z - 0.5d;
+            double w = random.NextUniformOpenInterval01();
+
+            double r = 2d / double.Pi * (z * double.TanPi(u) * double.Pi - double.Log(double.Log(w) * double.CosPi(u) / (-2d * z * (double)C)));
+            double v = r * (double)C + (double)Mu;
+
+            return v;
+        }
+
+        public bool Symmetric => false;
+
+        public Float128 Median => Mu + (median_base - bias) * C;
+
+        public Float128 Mode => Mu + (mode_base - bias) * C;
+
+        public Float128 Mean => Float128.NaN;
+
+        public Float128 Variance => Float128.NaN;
+
+        public Float128 Skewness => Float128.NaN;
+
+        public Float128 Kurtosis => Float128.NaN;
+
+        public Float128 Entropy => entropy_base + Float128.Log(C);
 
         public Float128 Alpha => 1d;
 
