@@ -11,6 +11,13 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LandauDistributionFP64Error
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LandauDistributionFP64_CPP", "LandauDistributionFP64_CPP\LandauDistributionFP64_CPP.vcxproj", "{D57EA03D-A9F2-40EC-8A1A-15214AB23FC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandauDistributionFP128", "LandauDistributionFP128\LandauDistributionFP128.csproj", "{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandauDistributionFP128Tests", "LandauDistributionFP128Tests\LandauDistributionFP128Tests.csproj", "{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F} = {7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +54,22 @@ Global
 		{D57EA03D-A9F2-40EC-8A1A-15214AB23FC9}.Release|Any CPU.Build.0 = Release|x64
 		{D57EA03D-A9F2-40EC-8A1A-15214AB23FC9}.Release|x64.ActiveCfg = Release|x64
 		{D57EA03D-A9F2-40EC-8A1A-15214AB23FC9}.Release|x64.Build.0 = Release|x64
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Debug|x64.Build.0 = Debug|Any CPU
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Release|x64.ActiveCfg = Release|Any CPU
+		{7A7EBA58-EBB0-4463-ACE3-6CA89C851C9F}.Release|x64.Build.0 = Release|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Debug|x64.Build.0 = Debug|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Release|x64.ActiveCfg = Release|Any CPU
+		{F0C970F5-6B7F-4A02-9BE7-0802EF9D1D2C}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
