@@ -41,8 +41,8 @@ If anyone would like to use some of the code in this repository, please contact 
 [Issue](https://github.com/tk-yoshimura/LandauDistributionFP64/issues)
 
 ## Report
+[ResearchGate](https://www.researchgate.net/publication/382141401_Numerical_Evaluation_and_High_Precision_Approximation_Formula_for_Landau_Distribution)  
 [TechRxiv](https://www.techrxiv.org/users/661998/articles/1085065-numerical-evaluation-and-high-precision-approximation-formula-for-landau-distribution)  
-[ResearchGate](https://www.researchgate.net/publication/381395796_Numerical_Evaluation_and_High_Precision_Approximation_Formula_for_Landau_Distribution)
 
 ## Author
 
