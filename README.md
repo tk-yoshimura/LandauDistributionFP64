@@ -5,6 +5,10 @@
 See: [LandauDistribution](https://github.com/tk-yoshimura/LandauDistribution)  
 Double-Double Precision: [DoubleDoubleStatistic](https://github.com/tk-yoshimura/DoubleDoubleStatistic)  
 
+## Scipy Contribution
+The research content in this repository is published as an implementation in Scipy and Boost.  
+[scipy reference](https://github.com/scipy/scipy/blob/9e93f673c4021cc6dc38487dbe8fb2db8cadf131/scipy/stats/_continuous_distns.py#L5777-L5779)
+
 ## Double Precision (IEEE 754) Approx
 [C# code](LandauDistributionFP64/LandauDistribution.cs)  
 [C++ code](LandauDistributionFP64_CPP/landau_distribution.hpp)  
